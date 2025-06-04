@@ -27,8 +27,8 @@ jobs:
       uses: docker/login-action@v2.2.0
       with:
         registry: crpi-oll9lua9ry7fxue7.cn-beijing.personal.cr.aliyuncs.com/sparkling/nav_rl
-        username: ${{ sparkling }}
-        password: ${{ wy20020102 }}
+        username: ${{ secrets.sparkling }}
+        password: ${{ secrets.wy20020102 }}
         logout: false
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
